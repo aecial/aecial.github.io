@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth scroll-py-16">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="h-full scroll-mt-4">
+  <body>
     <nav
-      class="hidden lg:flex justify-center items-center gap-8 w-full h-16 bg-red-200 text-2xl"
+      class="hidden lg:flex justify-center items-center gap-8 w-full h-16 bg-red-200 text-2xl fixed top-0"
       aria-label="main navigation"
     >
       <a href="#hero">Home</a>
@@ -37,19 +37,44 @@
     <main
       class="[&>*:nth-child(odd)]:bg-slate-300 [&>*:nth-child(even)]:bg-slate-200"
     >
-      <section id="hero" class="content-height p-4">
-        <h2 class="text-3xl text-center">Hero</h2>
+      <section
+        id="hero"
+        class="h-[100vh] flex items-center justify-center gap-24"
+      >
+        <div>
+          <h1 class="text-4xl underline underline-offset-[45px]">
+            Teddy L. Pascual Jr.
+          </h1>
+          <h1 class="text-xl text-center text-gray-500">
+            Aspiring Full-Stack Developer
+          </h1>
+        </div>
+        <div class="h-auto w-auto">
+          <img
+            src="./assets/profile.jpg"
+            alt="Profile Pic"
+            class="h-full w-full"
+          />
+        </div>
+        <div class="bg-black h-[85vh]">.</div>
+        <div class="bg-black h-[80vh]">.</div>
       </section>
-      <section id="about" class="h-[100vh] p-4">
+      <section id="about" class="md:content-height h-[100vh] p-4">
         <h2 class="text-3xl text-center">About</h2>
+        <div>
+          <h1 class="text-4xl">Teddy L. Pascual Jr.</h1>
+        </div>
+        <div>
+          <img src="./assets/profile.jpg" alt="Profile Pic" class="w-28 h-28" />
+        </div>
       </section>
-      <section id="skills" class="h-[100vh] p-4">
+      <section id="skills" class="md:content-height h-[100vh] p-4">
         <h2 class="text-3xl text-center">Skills</h2>
       </section>
-      <section id="projects" class="h-[100vh] p-4">
+      <section id="projects" class="md:content-height h-[100vh] p-4">
         <h2 class="text-3xl text-center">Projects</h2>
       </section>
-      <section id="contact" class="h-[100vh] p-4">
+      <section id="contact" class="md:content-height h-[100vh] p-4">
         <h2 class="text-3xl text-center">Contact</h2>
       </section>
     </main>
