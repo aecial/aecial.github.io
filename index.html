@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="h-full scroll-mt-4">
+    <nav
+      class="hidden lg:flex justify-center items-center gap-8 w-full h-16 bg-red-200 text-2xl"
+      aria-label="main navigation"
+    >
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <!-- <nav
+      class="flex justify-center items-center gap-8 w-full h-16 bg-red-200 text-2xl fixed top-0"
+      aria-label="mobile navigation"
+    >
+      
+    </nav> -->
+    <nav class="h-16 flex justify-between items-center lg:hidden">
+      <span></span>
+      <img src="./assets/hamburger.svg" alt="hamburger-icon" />
+    </nav>
+    <div class="hidden">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <main
+      class="[&>*:nth-child(odd)]:bg-slate-300 [&>*:nth-child(even)]:bg-slate-200"
+    >
+      <section id="hero" class="content-height p-4">
+        <h2 class="text-3xl text-center">Hero</h2>
+      </section>
+      <section id="about" class="h-[100vh] p-4">
+        <h2 class="text-3xl text-center">About</h2>
+      </section>
+      <section id="skills" class="h-[100vh] p-4">
+        <h2 class="text-3xl text-center">Skills</h2>
+      </section>
+      <section id="projects" class="h-[100vh] p-4">
+        <h2 class="text-3xl text-center">Projects</h2>
+      </section>
+      <section id="contact" class="h-[100vh] p-4">
+        <h2 class="text-3xl text-center">Contact</h2>
+      </section>
+    </main>
+  </body>
+</html>
